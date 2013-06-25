@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="VDKViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="input_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="9js-JL-Nuu">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="v2K-fB-C4e"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Add a new card:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tg1-1d-swu">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="fXP-h5-S4Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hF9-eP-7Sd">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="d8D-3a-ynQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="hOh-bK-L04"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Expiration Month" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yEX-0s-xyV">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8nq-h4-yES"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Expiration Year" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Dm-56-OTN">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Fbq-8i-1pP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVV" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YRP-Y2-BQ9">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Bxe-Qi-v0a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Zip Code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kB1-fu-RdX">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Rem-9T-43B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCl-F7-jmK">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="eVq-w6-D1x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButtonPressed:" destination="2" eventType="touchUpInside" id="aZJ-1C-0Bx"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="VDKGenericCard.png" translatesAutoresizingMaskIntoConstraints="NO" id="YU9-vS-wCe"/>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YRP-Y2-BQ9" firstAttribute="trailing" secondItem="kB1-fu-RdX" secondAttribute="trailing" type="default" id="1LC-cg-JK6"/>
+                            <constraint firstItem="HCl-F7-jmK" firstAttribute="top" secondItem="kB1-fu-RdX" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="9PC-wl-oFN"/>
+                            <constraint firstItem="1Dm-56-OTN" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Bhf-En-gat"/>
+                            <constraint firstItem="HCl-F7-jmK" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="DWG-OU-Ch5"/>
+                            <constraint firstItem="kB1-fu-RdX" firstAttribute="top" secondItem="3" secondAttribute="top" constant="209" id="Jds-Fk-O4f"/>
+                            <constraint firstItem="9js-JL-Nuu" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="O1E-Ic-w3K"/>
+                            <constraint firstItem="YRP-Y2-BQ9" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="OXI-sX-ZNW"/>
+                            <constraint firstItem="1Dm-56-OTN" firstAttribute="trailing" secondItem="YRP-Y2-BQ9" secondAttribute="trailing" type="default" id="Og7-Cs-HzB"/>
+                            <constraint firstItem="1Dm-56-OTN" firstAttribute="top" secondItem="3" secondAttribute="top" constant="128" id="P1X-lQ-3wA"/>
+                            <constraint firstItem="YRP-Y2-BQ9" firstAttribute="top" secondItem="3" secondAttribute="top" constant="170" id="P9f-lj-RoO"/>
+                            <constraint firstItem="yEX-0s-xyV" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="T0Q-Ri-Qrw"/>
+                            <constraint firstItem="yEX-0s-xyV" firstAttribute="top" secondItem="3" secondAttribute="top" constant="88" id="YpR-lj-X90"/>
+                            <constraint firstItem="9js-JL-Nuu" firstAttribute="top" secondItem="YU9-vS-wCe" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Z3b-pF-Keu"/>
+                            <constraint firstItem="1Dm-56-OTN" firstAttribute="trailing" secondItem="yEX-0s-xyV" secondAttribute="trailing" type="default" id="aBF-Nb-MH3"/>
+                            <constraint firstItem="hF9-eP-7Sd" firstAttribute="top" secondItem="3" secondAttribute="top" constant="47" id="cYu-bG-juK"/>
+                            <constraint firstItem="tg1-1d-swu" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="dJn-oT-Q48"/>
+                            <constraint firstItem="hF9-eP-7Sd" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="eda-Vk-GU7"/>
+                            <constraint firstItem="YU9-vS-wCe" firstAttribute="trailing" secondItem="hF9-eP-7Sd" secondAttribute="trailing" type="default" id="mPV-js-HCO"/>
+                            <constraint firstItem="tg1-1d-swu" firstAttribute="top" secondItem="3" secondAttribute="top" constant="9" id="p3e-Kp-BHE"/>
+                            <constraint firstItem="kB1-fu-RdX" firstAttribute="trailing" secondItem="HCl-F7-jmK" secondAttribute="trailing" type="default" id="rFf-sZ-Zed"/>
+                            <constraint firstItem="hF9-eP-7Sd" firstAttribute="trailing" secondItem="yEX-0s-xyV" secondAttribute="trailing" type="default" id="siX-yM-5CH"/>
+                            <constraint firstItem="kB1-fu-RdX" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="uKM-ur-5Mc"/>
+                            <constraint firstItem="9js-JL-Nuu" firstAttribute="top" secondItem="tg1-1d-swu" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="vAZ-op-ZD8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cardCVV" destination="YRP-Y2-BQ9" id="S1U-pH-Z8w"/>
+                        <outlet property="cardExpirationMonth" destination="yEX-0s-xyV" id="shR-hb-qZH"/>
+                        <outlet property="cardExpirationYear" destination="1Dm-56-OTN" id="bkt-7T-xWu"/>
+                        <outlet property="cardImage" destination="YU9-vS-wCe" id="7QA-rb-Zc4"/>
+                        <outlet property="cardNumber" destination="hF9-eP-7Sd" id="lKx-AF-vPv"/>
+                        <outlet property="cardZipCode" destination="kB1-fu-RdX" id="tz7-2y-qYg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="VDKGenericCard.png" width="28" height="19"/>
+        <image name="input_background.png" width="320" height="280"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="VDKViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VDKViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="submitButtonPressed:"/>
+                <relationship kind="outlet" name="cardCVV" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="cardExpirationMonth" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="cardExpirationYear" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="cardImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="cardNumber" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="cardZipCode" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
